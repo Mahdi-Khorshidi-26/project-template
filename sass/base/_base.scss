@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $link-color;
+}
