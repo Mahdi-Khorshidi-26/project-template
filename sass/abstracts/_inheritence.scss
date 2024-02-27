@@ -1,0 +1,13 @@
+%icon {
+  width: 4.5rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+%icon-abi {
+  //icon after before inherit
+  position: absolute;
+  content: "";
+  left: 0;
+  transition: 0.3s;
+}

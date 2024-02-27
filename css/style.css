@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+img {
+  display: block;
+  width: 100%; }
+
+ul,
+li,
+ol {
+  list-style: none; }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assests/fonts/Roboto-Light.ttf"); }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  min-height: 100vh;
+  box-sizing: border-box; }
+
+.content__nav--icon, .content__nav--icon::after, .content__nav--icon::before {
+  width: 4.5rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 1rem; }
+
+.content__nav--icon::after, .content__nav--icon::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  transition: 0.3s; }
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #c69963;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.6rem;
+  word-spacing: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  margin-top: 0.3rem;
+  font-weight: 500; }
+  .btn:hover {
+    transition: 0.2s;
+    background-color: #ba8e59;
+    transform: translateY(-0.5rem); }
+  .btn:active {
+    transition: 0.2s;
+    box-shadow: 0.2rem 0.7rem 0.5rem rgba(0, 0, 0, 0.4);
+    transform: translateY(0); }
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5% 95%; }
+  .content__nav {
+    background-color: #c69963;
+    cursor: pointer;
+    transition: 0.3s; }
+    .content__nav:hover > *,
+    .content__nav:hover > *::after,
+    .content__nav:hover > *::before {
+      transition: 0.3s;
+      box-shadow: 0.1rem 0.2rem 0.5rem #333; }
+    .content__nav--icon {
+      transition: 0.3s;
+      display: block;
+      margin: 0 auto;
+      margin-top: 4rem;
+      position: relative; }
+      .content__nav--icon::after {
+        top: -1.4rem; }
+      .content__nav--icon::before {
+        top: 1.4rem; }
+  .content__container .header__hero {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 80vh; }
+    .content__container .header__hero--introduction {
+      background-image: linear-gradient(to right bottom, rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.8)), url("../../assests/img/hero.jpeg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-attachment: fixed;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      padding: 5rem; }
+      .content__container .header__hero--introduction .logo__container {
+        height: 3rem;
+        justify-self: center; }
+        .content__container .header__hero--introduction .logo__container--img {
+          width: 13rem; }
+      .content__container .header__hero--introduction .title {
+        margin-left: 5rem; }
+        .content__container .header__hero--introduction .title__container--textSub {
+          color: #c69963;
+          font-size: 2rem; }
+        .content__container .header__hero--introduction .title__container--text {
+          font-size: 4rem;
+          color: white;
+          letter-spacing: 0.4rem; }
+        .content__container .header__hero--introduction .title__container--btn .title__btn {
+          color: white; }
+      .content__container .header__hero--introduction .supporters {
+        margin-inline: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        align-self: end; }
+        .content__container .header__hero--introduction .supporters__text {
+          font-size: 1.6rem;
+          color: rgba(255, 255, 255, 0.8);
+          position: relative;
+          width: 100%;
+          padding: 0 2rem;
+          text-align: center;
+          font-weight: 500; }
+          .content__container .header__hero--introduction .supporters__text::after {
+            content: "";
+            width: 39rem;
+            height: 0.2rem;
+            background-color: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            border-radius: 5rem;
+            top: 1.2rem;
+            right: 0; }
+          .content__container .header__hero--introduction .supporters__text::before {
+            content: "";
+            width: 39rem;
+            height: 0.2rem;
+            background-color: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            border-radius: 5rem;
+            top: 1.2rem;
+            left: 0; }
+        .content__container .header__hero--introduction .supporters__logos {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          opacity: 0.8; }
+          .content__container .header__hero--introduction .supporters__logos--logo1 {
+            height: 3rem;
+            width: 10rem; }
+          .content__container .header__hero--introduction .supporters__logos--logo2 {
+            height: 3rem;
+            width: 10rem; }
+          .content__container .header__hero--introduction .supporters__logos--logo3 {
+            height: 3rem;
+            width: 20rem; }
+          .content__container .header__hero--introduction .supporters__logos--logo4 {
+            height: 3rem;
+            width: 10rem; }
+    .content__container .header__hero--realtors {
+      background-color: #101d2c; }

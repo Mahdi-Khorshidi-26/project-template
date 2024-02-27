@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: $bg-color-nav;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.6rem;
+  word-spacing: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  margin-top: 0.3rem;
+  font-weight: 500;
+  &:hover {
+    transition: 0.2s;
+    background-color: rgb(186, 142, 89);
+    transform: translateY(-0.5rem);
+  }
+  &:active {
+    transition: 0.2s;
+    box-shadow: 0.2rem 0.7rem 0.5rem rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+  }
+}

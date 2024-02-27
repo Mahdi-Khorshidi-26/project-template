@@ -1,2 +1,13 @@
+// abstracts
+@import "abstracts/variables";
+// base
 @import "base/base";
 @import "base/typography";
+// abstracts
+@import "abstracts/functions";
+@import "abstracts/inheritence";
+@import "abstracts/mixins";
+//components
+@import "components/buttons";
+// pages
+@import "pages/home";
